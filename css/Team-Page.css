@@ -1,12 +1,14 @@
 body {
     background: radial-gradient(circle, rgb(147, 171, 195) 0%, rgb(235, 238, 241) 69%, rgb(9, 70, 150) 100%);
-
+    font-family: 'Space Grotesk', sans-serif;
+    background-color:#000;
+    color: #fff;
 }
 #Y23-24 ,#Y22-23{
     height :800px;
     width:1000px;
     background-color: black;
-    color:rgb(175, 204, 230);
+    color:#black;
 }
 #Y22-23,#Y23-24{
     
@@ -33,11 +35,11 @@ body {
     margin-bottom: 20px;
 }
 .Title h1{
-    font-style: italic ;
-    font-size: 65px;
+    font-style: bold ;
+    font-size: 3em;
 }
 .Anc-links{
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .Anc-links div:hover{
   color: rgb(19, 19, 32);
@@ -48,16 +50,17 @@ body {
 }
 .Cast{
     width:120px;
-    height:40px;
+    height:70px;
     padding: 20px;
     font-family:  sans-serif bold;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 2.5em;
     text-align: center;
     margin:50px auto;
     transition: 0.1s font-size ease-in 0s;
 }
 .Cast:hover{
+     padding:5px;
     font-size: 52px;
 }
 .card:hover{
@@ -77,11 +80,12 @@ body {
     transition:2s text-decoration ease 0s;
     background-color: rgba(15, 13, 37, 0.676);
     padding-left: 3px;
-    padding-bottom: 3px;;
+    padding-bottom: 5px;;
 }
 .card img{
     width: 100px;
     height:100px;
+    padding:4px;
     margin-left:32px;
     margin-right:32px;
     border-radius: 5px;
@@ -100,10 +104,120 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-height:300px;
-    width:900px;
+    min-height:500px;
+    width:1200px;
     margin :10px auto;
 }
 .Title2{
     text-align: center;
+}
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    #Y23-24,
+    #Y22-23 {
+        height: 900px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .Title h1 {
+        font-size: 2em;
+    }
+
+    .Anc-links {
+        padding-top: 10px;
+    }
+
+    .Anc-links div {
+        padding: 5px;
+    }
+
+    .Cast {
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        font-size: 1.5em;
+        margin: 30px auto;
+    }
+
+    .card {
+        height: 120px;
+        width: 120px;
+        margin: 15px 15px;
+    }
+
+    .card img {
+        width: 70px;
+        height: 70px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card h3 {
+        margin-top: 10px;
+    }
+
+    .AllCast {
+        min-height: 300px;
+        width: 90%;
+    }
+}
+/* Media Query for Larger Screens */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    #Y23-24,
+    #Y22-23 {
+        height: 1200px;
+        width: 1200px;
+    }
+
+    .Title h1 {
+        font-size: 3em;
+    }
+
+    .Anc-links {
+        padding-top: 50px;
+    }
+
+    .Anc-links div {
+        padding: 10px;
+    }
+
+    .Cast {
+        width: 180px;
+        height: 80px;
+        padding: 30px;
+        font-size: 2.5em;
+        margin: 50px auto;
+    }
+
+    .card {
+        height: 200px;
+        width: 200px;
+        margin: 35px 35px;
+    }
+
+    .card img {
+        width: 120px;
+        height: 120px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .card h3 {
+        margin-top: 30px;
+    }
+
+    .AllCast {
+        min-height: 600px;
+        width: 1400px;
+        margin: 10px auto;
+    }
 }

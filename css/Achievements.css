@@ -1,8 +1,14 @@
 /* Set background color */
 
+.nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
   
   /* Style for top logo */
   #top-left {
+  background-color:#fff;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -10,6 +16,7 @@
 
   .blog-start .blog p{
 	padding: 20px;
+	font-family: sans-serif;
 	gap: 10px;
 	text-align: left;
   }
@@ -69,6 +76,51 @@
 	.block {
 	  width: 45%;
 	}
+	body {
+        font-size: 18px;
+    }
+
+    #Y23-24,
+    #Y22-23 {
+        height: 80%;
+        width: 80%;
+        min-width: 315px;
+        margin: 20px auto;
+    }
+
+    .Title h1 {
+        font-size: 50px;
+    }
+
+    .Anc-links {
+        padding-top: 30px;
+    }
+
+    .Anc-links div {
+        padding: 5px;
+    }
+
+    .Cast {
+        font-size: 40px;
+    }
+
+    .card {
+        height: 150px;
+        width: 150px;
+        margin: 20px 20px;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card h3 {
+        margin-top: 10px;
+    }
+
   }
   
   @media (max-width: 480px) {
@@ -100,9 +152,9 @@
   .block {
 	width: 30%;
 	background-color: #1d5765;
-	padding: 20px;
+	padding: 3px;
 	color: white;
-	text-align: center;
+	text-align: left;
 	font-size: 18px;
 	border-radius: 20px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -125,7 +177,7 @@
   
   
   /* media query for smaller screens */
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
 	.row1, .row2 {
 	  flex-direction: column;
 	  align-items: stretch;
@@ -134,6 +186,51 @@
 	  width: 100%;
 	  margin-top: 20px;
 	}
+	body {
+        font-size: 16px;
+    }
+
+    #Y23-24,
+    #Y22-23 {
+        height: auto;
+        width: 90%;
+        min-width: 280px;
+        margin: 20px auto;
+    }
+
+    .Title h1 {
+        font-size: 40px;
+    }
+
+    .Anc-links {
+        padding-top: 20px;
+    }
+
+    .Anc-links div {
+        padding: 5px;
+    }
+
+    .Cast {
+        font-size: 30px;
+        margin: 30px auto;
+    }
+
+    .card {
+        height: 150px;
+        width: 150px;
+        margin: 20px 20px;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card h3 {
+        margin-top: 10px;
+    }
   }
   
   
